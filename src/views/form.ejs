@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #container {
+        background-color: black;
+        border: 5px solid greenyellow;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        height: 200px;
+        width: 250px;
+        margin: 0 auto;
+      }
+      input{
+        width: 100px;
+      }
+      button {
+        margin: 10px;
+        width: 220px;
+        background-color: gray;
+        border: 1px solid gray;
+      }
+      button:hover{
+        background-color: orange;
+      }
+      input:hover{
+        background-color: greenyellow;
+      }
+    </style>
+    <title>Simple Calculator</title>
+  </head>
+  <body style="background:wheat ;">
+    <div id="container">
+      <form action="/math" method="POST">
+        <input type="text" name="num1" value="" />
+        <input type="text" name="num2" value="" />
+        <div>
+          <button type="submit" value="add" name="submit">Addition</button>
+        </div>
+        <div>
+          <button type="submit" value="sub" name="submit">Subtraction</button>
+        </div>
+        <div>
+          <button type="submit" value="mul" name="submit">
+            Multiplication
+          </button>
+        </div>
+        <div>
+          <button type="submit" value="div" name="submit">Division</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
